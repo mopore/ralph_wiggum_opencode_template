@@ -71,6 +71,22 @@ func TestBackspace(t *testing.T) {
 	}
 }
 
+// TestRangeIntegers uses Go 1.25 range-over-integer feature
+func TestRangeIntegers(t *testing.T) {
+	e := New()
+	// Add 1 five times using range over int
+	for i := range 5 {
+		e.Input("1")
+		e.Operator("+")
+		_ = i // use i to avoid unused warning
+	}
+	e.Input("0")
+	e.Equals()
+	if e.Display() != "5" {
+		t.Errorf("sum of five 1s = %s, want 5", e.Display())
+	}
+}
+
 // TestConcurrentOps uses sync.WaitGroup.Go (Go 1.25 feature)
 func TestConcurrentOps(t *testing.T) {
 	var wg sync.WaitGroup

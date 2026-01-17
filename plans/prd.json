@@ -63,6 +63,6 @@
       "Search tests for usage of 'wg.Go('",
       "Run 'go test ./...' successfully"
     ],
-    "passes": false
+    "passes": true
   }
 ]
