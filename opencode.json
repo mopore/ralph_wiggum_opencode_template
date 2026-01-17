@@ -1,0 +1,25 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "permission": {
+    "*": "allow",
+    "external_directory": "deny",
+    "bash": {
+      "*": "ask",
+      "go test*": "allow",
+      "go vet*": "allow",
+      "go run*": "allow",
+      "go mod tidy*": "allow",
+      "gofmt*": "allow",
+      "git status*": "allow",
+      "git diff*": "allow",
+      "git add*": "allow",
+      "git commit*": "allow",
+      "git log*": "allow",
+      "git show*": "allow",
+      "rm *": "deny",
+      "sudo *": "deny"
+    },
+    "edit": "allow",
+    "doom_loop": "ask"
+  }
+}

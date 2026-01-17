@@ -3,4 +3,3 @@
 ## 2026-01-17
 
 - Bootstrapped template repo structure (PRD + progress log + runner scripts)
-- Implemented basic calc ops (+,-,*,/) w/ Fyne UI, Makefile, tests pass
