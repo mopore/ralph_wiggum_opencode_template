@@ -1,0 +1,68 @@
+[
+  {
+    "category": "functional",
+    "description": "Calculator supports basic operations: add, subtract, multiply, divide",
+    "validationSteps": [
+      "Launch the app",
+      "Compute 7 + 5 and verify display shows 12",
+      "Compute 9 - 4 and verify display shows 5",
+      "Compute 6 * 7 and verify display shows 42",
+      "Compute 8 / 2 and verify display shows 4"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Calculator supports mouse operation via standard keys (0-9, ., +, -, *, /, =, C, backspace)",
+    "validationSteps": [
+      "Launch the app",
+      "Click buttons to enter a multi-digit number (e.g. 123) and verify display updates",
+      "Click an operator and another number, then '=' and verify result",
+      "Use 'C' to clear and verify display resets",
+      "Use backspace and verify last digit is removed"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Calculator supports keyboard input matching the UI keys",
+    "validationSteps": [
+      "Launch the app and focus the window",
+      "Type digits 0-9 and verify display updates",
+      "Type +, -, *, / and verify operator is applied",
+      "Press Enter for '=' and verify result",
+      "Press Escape for clear and Backspace to delete"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Calculator display uses black background with bright green text",
+    "validationSteps": [
+      "Launch the app",
+      "Verify the calculator display area has a black background",
+      "Verify the displayed digits are bright green"
+    ],
+    "passes": false
+  },
+  {
+    "category": "non-functional",
+    "description": "Project builds with Go 1.25 and uses Fyne for the UI",
+    "validationSteps": [
+      "Run 'go version' and confirm Go 1.25 is used",
+      "Run 'go test ./...' and confirm tests execute",
+      "Run 'go run ./cmd/calculator' and confirm the UI launches"
+    ],
+    "passes": false
+  },
+  {
+    "category": "non-functional",
+    "description": "Use Go 1.25 features when feasible (range over integers; sync.WaitGroup.Go in tests)",
+    "validationSteps": [
+      "Search code for at least one 'for i := range N' loop",
+      "Search tests for usage of 'wg.Go('",
+      "Run 'go test ./...' successfully"
+    ],
+    "passes": false
+  }
+]
