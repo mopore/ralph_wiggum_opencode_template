@@ -9,7 +9,7 @@
       "Compute 6 * 7 and verify display shows 42",
       "Compute 8 / 2 and verify display shows 4"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
