@@ -7,3 +7,4 @@
 - PRD #2: Mouse operation already implemented (buttons 0-9, ., +, -, *, /, =, C, ←); added Makefile
 - PRD #3: Keyboard input already present (SetOnTypedRune for digits/ops, SetOnTypedKey for Enter/Escape/Backspace); marked passes=true
 - PRD #4: Display styling already implemented (black bg via canvas.NewRectangle, green text via RGBA{0,255,0,255}); marked passes=true
+- PRD #5: Verified Go 1.25.5 + Fyne in go.mod; tests pass; marked passes=true

@@ -53,7 +53,7 @@
       "Run 'go test ./...' and confirm tests execute",
       "Run 'go run ./cmd/calculator' and confirm the UI launches"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "non-functional",
