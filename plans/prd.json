@@ -33,7 +33,7 @@
       "Press Enter for '=' and verify result",
       "Press Escape for clear and Backspace to delete"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
