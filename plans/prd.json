@@ -43,7 +43,7 @@
       "Verify the calculator display area has a black background",
       "Verify the displayed digits are bright green"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "non-functional",
