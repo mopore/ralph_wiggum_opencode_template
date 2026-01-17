@@ -9,7 +9,7 @@
       "Compute 6 * 7 and verify display shows 42",
       "Compute 8 / 2 and verify display shows 4"
     ],
-    "passes": true
+    "passes": false
   },
   {
     "category": "functional",
@@ -21,7 +21,7 @@
       "Use 'C' to clear and verify display resets",
       "Use backspace and verify last digit is removed"
     ],
-    "passes": true
+    "passes": false
   },
   {
     "category": "functional",
@@ -33,7 +33,7 @@
       "Press Enter for '=' and verify result",
       "Press Escape for clear and Backspace to delete"
     ],
-    "passes": true
+    "passes": false
   },
   {
     "category": "functional",
@@ -43,7 +43,7 @@
       "Verify the calculator display area has a black background",
       "Verify the displayed digits are bright green"
     ],
-    "passes": true
+    "passes": false
   },
   {
     "category": "non-functional",
@@ -53,7 +53,7 @@
       "Run 'go test ./...' and confirm tests execute",
       "Run 'go run ./cmd/calculator' and confirm the UI launches"
     ],
-    "passes": true
+    "passes": false
   },
   {
     "category": "non-functional",
@@ -63,6 +63,6 @@
       "Search tests for usage of 'wg.Go('",
       "Run 'go test ./...' successfully"
     ],
-    "passes": true
+    "passes": false
   }
 ]

@@ -1,25 +1,48 @@
 {
   "$schema": "https://opencode.ai/config.json",
   "permission": {
-    "*": "allow",
-    "external_directory": "deny",
+    "read": {
+      "*": "allow",
+      "*.env": "deny",
+      "*.env.*": "deny",
+      "*.env.example": "allow"
+    },
+
+    "glob": "allow",
+    "list": "allow",
+    "grep": "allow",
+
+    "todoread": "allow",
+    "todowrite": "allow",
+
+    "edit": "allow",
+
     "bash": {
-      "*": "ask",
+      "*": "deny",
+
       "go test*": "allow",
-      "go vet*": "allow",
-      "go run*": "allow",
-      "go mod tidy*": "allow",
+      "go fmt*": "allow",
       "gofmt*": "allow",
+      "go run*": "allow",
+
+      "make*": "allow",
+
       "git status*": "allow",
       "git diff*": "allow",
+      "git log*": "allow",
       "git add*": "allow",
       "git commit*": "allow",
-      "git log*": "allow",
-      "git show*": "allow",
+
+      "git push*": "deny",
       "rm *": "deny",
       "sudo *": "deny"
     },
-    "edit": "allow",
-    "doom_loop": "ask"
+
+    "webfetch": "deny",
+    "websearch": "deny",
+    "codesearch": "deny",
+
+    "external_directory": "deny",
+    "doom_loop": "deny"
   }
 }
