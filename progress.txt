@@ -4,3 +4,4 @@
 
 - Bootstrapped template repo structure (PRD + progress log + runner scripts)
 - PRD #1: Created calc engine (internal/calc) w/ add/sub/mul/div + Fyne UI in main.go; tests pass
+- PRD #2: Mouse operation already implemented (buttons 0-9, ., +, -, *, /, =, C, ←); added Makefile

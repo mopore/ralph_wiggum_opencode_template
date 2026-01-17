@@ -21,7 +21,7 @@
       "Use 'C' to clear and verify display resets",
       "Use backspace and verify last digit is removed"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
